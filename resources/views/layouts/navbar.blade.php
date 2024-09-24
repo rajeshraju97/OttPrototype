@@ -1,4 +1,5 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-transparent position-absolute top-0 start-0 w-100 mb-5">
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent position-absolute top-0 start-0 w-100 mb-5"
+    style="z-index:1;">
     <div class="container-fluid">
         <a class="navbar-brand" href="/">
             <img src="{{ asset('images/logo3.png') }}" alt="Logo" class="img-fluid" style="max-height: 80px;">
@@ -12,7 +13,7 @@
                 @auth
                     <li class="nav-item">
                         <div class="search-box">
-                            <form action="{{route('search.multi')}}" method="post">
+                            <form action="#" method="post">
                                 @csrf
                                 <button type="button" class="btn-search"><i class="bi bi-search"></i></button>
                                 <input type="text" class="input-search" name="search_query" placeholder="Type to Search...">
@@ -29,8 +30,8 @@
                         Movies
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/movies">All Movies</a></li>
-                        <li><a class="dropdown-item" href="#">World Popular Movies</a>
+                        <li><a class="dropdown-item" href="{{ route('movies.list') }}">All Movies</a></li>
+                        <li><a class="dropdown-item" href="{{ route('wpmovies.list') }}">World Popular Movies</a>
                         </li>
                         <li><a class="dropdown-item" href="#">Top Rated Movies</a></li>
                         <li><a class="dropdown-item" href="#">Telugu Popular
@@ -44,8 +45,8 @@
                         Tv Series
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/tvseries">All Tv Series</a></li>
-                        <li><a class="dropdown-item" href="#">Top Rated Series</a>
+                        <li><a class="dropdown-item" href="{{ route('tv.series.list') }}">All Tv Series</a></li>
+                        <li><a class="dropdown-item" href="{{ route('top.rated.list') }}">Top Rated Series</a>
                         </li>
                         <li><a class="dropdown-item" href="#">Airing Today Series</a>
                         </li>
@@ -60,7 +61,7 @@
                         Anime
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/animes">All Anime</a>
+                        <li><a class="dropdown-item" href="{{ route('anime.list') }}">All Anime</a>
                         </li>
                         <li><a class="dropdown-item" href="#">Top Anime</a>
                         </li>
