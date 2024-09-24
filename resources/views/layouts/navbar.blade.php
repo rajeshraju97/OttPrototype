@@ -29,11 +29,11 @@
                         Movies
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{{ route('movies.list') }}">All Movies</a></li>
-                        <li><a class="dropdown-item" href="{{ route('wpmovies.list') }}">World Popular Movies</a>
+                        <li><a class="dropdown-item" href="/movies">All Movies</a></li>
+                        <li><a class="dropdown-item" href="#">World Popular Movies</a>
                         </li>
-                        <li><a class="dropdown-item" href="{{ route('trmovies.list') }}">Top Rated Movies</a></li>
-                        <li><a class="dropdown-item" href="{{ route('tpmovies.list') }}">Telugu Popular
+                        <li><a class="dropdown-item" href="#">Top Rated Movies</a></li>
+                        <li><a class="dropdown-item" href="#">Telugu Popular
                                 Movies</a></li>
                     </ul>
                 </li>
@@ -44,12 +44,12 @@
                         Tv Series
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{{ route('tv.series.list') }}">All Tv Series</a></li>
-                        <li><a class="dropdown-item" href="{{ route('top.rated.list') }}">Top Rated Series</a>
+                        <li><a class="dropdown-item" href="/tvseries">All Tv Series</a></li>
+                        <li><a class="dropdown-item" href="#">Top Rated Series</a>
                         </li>
-                        <li><a class="dropdown-item" href="{{ route('airing.today.list') }}">Airing Today Series</a>
+                        <li><a class="dropdown-item" href="#">Airing Today Series</a>
                         </li>
-                        <li><a class="dropdown-item" href="{{ route('popular.series.list') }}">Popular Series</a></li>
+                        <li><a class="dropdown-item" href="#">Popular Series</a></li>
                     </ul>
                 </li>
 
@@ -60,13 +60,13 @@
                         Anime
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{{ route('anime.list') }}">All Anime</a>
+                        <li><a class="dropdown-item" href="/animes">All Anime</a>
                         </li>
-                        <li><a class="dropdown-item" href="{{ route('top.anime.list') }}">Top Anime</a>
+                        <li><a class="dropdown-item" href="#">Top Anime</a>
                         </li>
-                        <li><a class="dropdown-item" href="{{ route('popular.anime.list') }}">Popular Anime</a>
+                        <li><a class="dropdown-item" href="#">Popular Anime</a>
                         </li>
-                        <li><a class="dropdown-item" href="{{ route('upcoming.anime.list') }}">Upcoming Anime</a>
+                        <li><a class="dropdown-item" href="#">Upcoming Anime</a>
                             </a>
                         </li>
                     </ul>

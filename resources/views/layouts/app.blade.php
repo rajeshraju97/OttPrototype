@@ -78,7 +78,7 @@
                     <!-- Grid column -->
                     <div class="col-md-2">
                         <h6 class="text-uppercase font-weight-bold">
-                            <a href="/tv_series" class="text-white">Tv Series</a>
+                            <a href="/tvseries" class="text-white">Tv Series</a>
                         </h6>
                     </div>
                     <!-- Grid column -->
@@ -86,7 +86,7 @@
                     <!-- Grid column -->
                     <div class="col-md-2">
                         <h6 class="text-uppercase font-weight-bold">
-                            <a href="/anime" class="text-white">Anime</a>
+                            <a href="/animes" class="text-white">Anime</a>
                         </h6>
                     </div>
                     <!-- Grid column -->

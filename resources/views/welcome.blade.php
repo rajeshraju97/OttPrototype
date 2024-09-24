@@ -50,7 +50,7 @@
                                 Movies
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">All Movies</a></li>
+                                <li><a class="dropdown-item" href="/movies">All Movies</a></li>
                                 <li><a class="dropdown-item" href="#">World Popular
                                         Movies</a>
                                 </li>
@@ -66,7 +66,7 @@
                                 Tv Series
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">All Tv Series</a></li>
+                                <li><a class="dropdown-item" href="/tvseries">All Tv Series</a></li>
                                 <li><a class="dropdown-item" href="#">Top Rated Series</a>
                                 </li>
                                 <li><a class="dropdown-item" href="#">Airing Today
@@ -83,7 +83,7 @@
                                 Anime
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">All Anime</a>
+                                <li><a class="dropdown-item" href="/animes">All Anime</a>
                                 </li>
                                 <li><a class="dropdown-item" href="#">Top Anime</a>
                                 </li>

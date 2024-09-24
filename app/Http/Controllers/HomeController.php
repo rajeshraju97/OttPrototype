@@ -12,4 +12,17 @@ class HomeController extends Controller
     {
         return view('welcome');
     }
+    public function singleMovie()
+    {
+        return view('single_movie');
+    }
+    public function singletvseries()
+    {
+        return view('single_tvseries');
+    }
+    public function singleAnime()
+    {
+        return view('single_anime');
+    }
+
 }
