@@ -10,6 +10,135 @@
         style="background-image: url('{{ asset('prototype_images/corosel/avengers.jpg') }}');backround-size:cover;">
         <div class="overlay"></div>
         <!-- #region -->
+<<<<<<< HEAD
+
+        <!-- Navbar Inside Each Carousel Slide -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent position-absolute top-0 start-0 w-100"
+            style="z-index: 10;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                    <img src="{{ asset('images/logo3.png') }}" alt="Logo" class="img-fluid" style="max-height: 80px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent1" style="margin-right:5pc;">
+
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        @auth
+                            <li class="nav-item">
+                                <div class="search-box">
+                                    <form action="#" method="post">
+                                        @csrf
+                                        <button type="button" class="btn-search"><i class="bi bi-search"></i></button>
+                                        <input type="text" class="input-search" name="search_query"
+                                            placeholder="Type to Search...">
+                                    </form>
+                                </div>
+                            </li>
+
+                        @endauth
+                        <li class="nav-item">
+                            <a class="nav-link text-light fs-5" aria-current="page" href="/">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fs-5" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Movies
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/movies">All Movies</a></li>
+                                <li><a class="dropdown-item" href="#">World Popular
+                                        Movies</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Top Rated Movies</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Telugu Popular
+                                        Movies</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fs-5" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Tv Series
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/tvseries">All Tv Series</a></li>
+                                <li><a class="dropdown-item" href="#">Top Rated Series</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Airing Today
+                                        Series</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Popular
+                                        Series</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fs-5" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Anime
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/animes">All Anime</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Top Anime</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Popular Anime</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Upcoming
+                                        Anime</a>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Show Profile, Username, and Logout links if the user is authenticated -->
+                        @auth
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle fs-5" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <!-- Display the username here -->
+                                    <i class="bi bi-person-circle"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Test</a></li>
+
+                                    <li><a class="dropdown-item" href="#">WatchList</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                            Logout
+                                        </a>
+                                        <form id="logout-form" action="#" method="POST" class="d-none">
+                                            @csrf
+                                        </form>
+                                    </li>
+                                </ul>
+                            </li>
+                        @endauth
+
+                        <!-- Show Login and Signup links if the user is a guest -->
+                        @guest
+                            <li class="nav-item">
+                                <a class="nav-link text-light fs-5" href="/register">Sign In/Up</a>
+                            </li>
+
+                        @endguest
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+=======
+>>>>>>> 4afdee6225f7019fbb17bdaef9a5f95cbdbd1d0f
         <!-- Slider Text -->
         <div class="container">
             <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
