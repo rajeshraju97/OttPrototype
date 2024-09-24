@@ -30,8 +30,8 @@
                         Movies
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{{ route('movies.list') }}">All Movies</a></li>
-                        <li><a class="dropdown-item" href="{{ route('wpmovies.list') }}">World Popular Movies</a>
+                        <li><a class="dropdown-item" href="#">All Movies</a></li>
+                        <li><a class="dropdown-item" href="#">World Popular Movies</a>
                         </li>
                         <li><a class="dropdown-item" href="#">Top Rated Movies</a></li>
                         <li><a class="dropdown-item" href="#">Telugu Popular
@@ -45,8 +45,8 @@
                         Tv Series
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{{ route('tv.series.list') }}">All Tv Series</a></li>
-                        <li><a class="dropdown-item" href="{{ route('top.rated.list') }}">Top Rated Series</a>
+                        <li><a class="dropdown-item" href="#">All Tv Series</a></li>
+                        <li><a class="dropdown-item" href="#">Top Rated Series</a>
                         </li>
                         <li><a class="dropdown-item" href="#">Airing Today Series</a>
                         </li>
@@ -61,7 +61,7 @@
                         Anime
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{{ route('anime.list') }}">All Anime</a>
+                        <li><a class="dropdown-item" href="#">All Anime</a>
                         </li>
                         <li><a class="dropdown-item" href="#">Top Anime</a>
                         </li>
